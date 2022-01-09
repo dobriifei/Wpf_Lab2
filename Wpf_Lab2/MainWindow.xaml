@@ -1,0 +1,61 @@
+﻿<Window x:Class="Wpf_Lab2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Wpf_Lab2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="550
+        " Width="350">
+    <Grid ShowGridLines="false">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="57*"/>
+            <RowDefinition Height="38*"/>
+            <RowDefinition Height="38*"/>
+            <RowDefinition Height="38*"/>
+            <RowDefinition Height="38*"/>
+            <RowDefinition Height="38*"/>
+            <RowDefinition Height="33*"/>
+            <RowDefinition Height="5*"/>
+
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <TextBlock Grid.Column="0" Grid.ColumnSpan="4" Grid.Row="0" Foreground="Black" Background="#FFA2E4C6" Margin="1,1,1,0.4" FontSize="72" FrameworkElement.FlowDirection="RightToLeft"  TextOptions.TextHintingMode="Fixed" TextAlignment="Justify" FontWeight="SemiBold"  TextTrimming="WordEllipsis" TextWrapping="Wrap" Cursor="UpArrow"  ><InlineUIContainer>
+                <Label Content="123,5" Grid.Column="0" Grid.ColumnSpan="4" Grid.Row="0" Margin="20" FontSize="36"/>
+            </InlineUIContainer></TextBlock>
+        <Button Content="%" Grid.Column="0" Grid.Row="1" Margin="1,0.6,1.4,1.4" Click="Button_Click" Background="#FFBDC3B9" FontSize="22" RenderTransformOrigin="0.502,0.503" FontWeight="SemiBold"/>
+        <Button Content="CE" Grid.Column="1" Grid.Row="1" Margin="0.6,0.6,0.8,1.4" Click="Button_Click" Background="#FFBDC3B9" FontSize="22" RenderTransformOrigin="0.502,0.503" FontWeight="SemiBold"/>
+        <Button Content="C" Grid.Column="2" Grid.Row="1" Margin="1.2,0.6,1.4,1.4" Click="Button_Click" Background="#FFBDC3B9" FontSize="22" RenderTransformOrigin="0.502,0.503" FontWeight="SemiBold"/>
+        <Button Content="on" Grid.Column="3" Grid.Row="1" Margin="0.6,0.6,1,1.4" Click="Button_Click" Background="#FFBDC3B9" FontSize="22" RenderTransformOrigin="0.502,0.503" FontWeight="SemiBold"/>
+        <Button Content="1/x" Grid.Column="0" Grid.Row="2" Margin="1,0.6,1.4,1.4" Click="Button_Click" Background="#FFBDC3B9" FontSize="22" RenderTransformOrigin="0.502,0.503" FontWeight="SemiBold"/>
+        <Button Content="x²" Grid.Column="1" Grid.Row="2" Margin="0.6,0.6,0.8,1.4" Click="Button_Click" Background="#FFBDC3B9" FontSize="22" RenderTransformOrigin="0.502,0.503" FontWeight="SemiBold"/>
+        <Button Content="√" Grid.Column="2" Grid.Row="2" Margin="1.2,0.6,1.4,1.4" Click="Button_Click" Background="#FFBDC3B9" FontSize="22" RenderTransformOrigin="0.5,0.5" FontWeight="SemiBold"/>
+        <Button Content="/" Grid.Column="3" Grid.Row="2" Margin="0.6,0.6,1,1.4" Click="Button_Click" Background="#FFBDC3B9" FontSize="22" RenderTransformOrigin="0.5,0.5" FontWeight="SemiBold"/>
+        <Button Content="*" Grid.Column="3" Grid.Row="3" Margin="0.6,0.6,1,1.4" Click="Button_Click" Background="#FFBDC3B9" FontSize="22" RenderTransformOrigin="0.502,0.503" FontWeight="SemiBold"/>
+        <Button Content="-" Grid.Column="3" Grid.Row="4" Margin="0.6,0.6,1,1.4" Click="Button_Click" Background="#FFBDC3B9" FontSize="22" RenderTransformOrigin="0.502,0.503" FontWeight="SemiBold"/>
+        <Button Content="+" Grid.Column="3" Grid.Row="5" Margin="0.6,0.6,1,1.4" Click="Button_Click" Background="#FFBDC3B9" FontSize="22" RenderTransformOrigin="0.502,0.503" FontWeight="SemiBold"/>
+        <Button Content="%" Grid.Column="3" Grid.Row="6" Margin="0.6,0.6,1,1.4" Click="Button_Click" Background="#FFBDC3B9" FontSize="22" RenderTransformOrigin="0.502,0.503" FontWeight="SemiBold" Grid.RowSpan="2"/>
+        <Button Content="=" Grid.Column="3" Grid.Row="6" Margin="0.6,0.6,1,1.4" Click="Button_Click" Background="#FFBDC3B9" FontSize="22" RenderTransformOrigin="0.502,0.503" FontWeight="SemiBold" Grid.RowSpan="2"/>
+        <Button Content="7" Grid.Column="0" Grid.Row="3" Margin="1,0.6,1.4,1.4" Click="Button_Click" Background="#FFF4F4EA" FontSize="22" RenderTransformOrigin="0.502,0.503" FontWeight="SemiBold"/>
+        <Button Content="8" Grid.Column="1" Grid.Row="3" Margin="0.6,0.6,0.8,1.4" Click="Button_Click" Background="#FFF4F4EA" FontSize="22" RenderTransformOrigin="0.502,0.503" FontWeight="SemiBold"/>
+        <Button Content="9" Grid.Column="2" Grid.Row="3" Margin="1.2,0.6,1.4,1.4" Click="Button_Click" Background="#FFF4F4EA" FontSize="22" RenderTransformOrigin="0.502,0.503" FontWeight="SemiBold"/>
+        <Button Content="4" Grid.Column="0" Grid.Row="4" Margin="1,0.6,1.4,1.4" Click="Button_Click" Background="#FFF4F4EA" FontSize="22" RenderTransformOrigin="0.502,0.503" FontWeight="SemiBold"/>
+        <Button Content="5" Grid.Column="1" Grid.Row="4" Margin="0.6,0.6,0.8,1.4" Click="Button_Click" Background="#FFF4F4EA" FontSize="22" RenderTransformOrigin="0.502,0.503" FontWeight="SemiBold"/>
+        <Button Content="6" Grid.Column="2" Grid.Row="4" Margin="1.2,0.6,1.4,1.4" Click="Button_Click" Background="#FFF4F4EA" FontSize="22" RenderTransformOrigin="0.502,0.503" FontWeight="SemiBold"/>
+        <Button Content="1" Grid.Column="0" Grid.Row="5" Margin="1,0.6,1.4,1.4" Click="Button_Click" Background="#FFF4F4EA" FontSize="22" RenderTransformOrigin="0.502,0.503" FontWeight="SemiBold"/>
+        <Button Content="2" Grid.Column="1" Grid.Row="5" Margin="0.6,0.6,0.8,1.4" Click="Button_Click" Background="#FFF4F4EA" FontSize="22" RenderTransformOrigin="0.502,0.503" FontWeight="SemiBold"/>
+        <Button Content="3" Grid.Column="2" Grid.Row="5" Margin="1.2,0.6,1.4,1.4" Click="Button_Click" Background="#FFF4F4EA" FontSize="22" RenderTransformOrigin="0.502,0.503" FontWeight="SemiBold"/>
+        <Button Content="+/-" Grid.Column="0" Grid.Row="6" Margin="1,0.6,1.4,1.4" Click="Button_Click" Background="#FFF4F4EA" FontSize="22" RenderTransformOrigin="0.502,0.503" FontWeight="SemiBold" Grid.RowSpan="2"/>
+        <Button Content="0" Grid.Column="1" Grid.Row="6" Margin="0.6,0.6,0.8,1.4" Click="Button_Click" Background="#FFF4F4EA" FontSize="22" RenderTransformOrigin="0.502,0.503" FontWeight="SemiBold" Grid.RowSpan="2"/>
+        <Button Content="," Grid.Column="2" Grid.Row="6" Margin="1.2,0.6,1.4,1.4" Click="Button_Click" Background="#FFF4F4EA" FontSize="22" RenderTransformOrigin="0.502,0.503" FontWeight="SemiBold" Grid.RowSpan="2"/>
+
+
+
+
+    </Grid>
+</Window>
